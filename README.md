@@ -48,16 +48,6 @@ Para descargar la librería Jama:
 
 ### Ejecución del Programa
 
-1. Clona o descarga el proyecto en tu máquina.
-2. Asegúrate de que el archivo `jama.jar` está presente y configurado en tu entorno de desarrollo.
-3. Compila y ejecuta el archivo `Main.java` para interactuar con el programa.
-
-```bash
-javac -cp .:jama.jar Main.java
-java -cp .:jama.jar Main
-
-Ejemplo de Uso
-
 Al ejecutar el programa, el usuario verá el siguiente mensaje en la consola:
 
 Seleccione el modelo a evaluar:
@@ -75,15 +65,6 @@ Algunas posibles mejoras incluyen:
 	•	Implementar otros tipos de modelos de regresión.
 	•	Agregar soporte para la normalización de datos.
 
-Contribuciones
-
-Si deseas contribuir a este proyecto, por favor sigue los siguientes pasos:
-
-	1.	Haz un fork del repositorio.
-	2.	Crea una nueva rama (git checkout -b feature/nueva-funcionalidad).
-	3.	Haz commit de tus cambios (git commit -am 'Agregué una nueva funcionalidad').
-	4.	Sube la rama (git push origin feature/nueva-funcionalidad).
-	5.	Abre un Pull Request.
 
 Licencia
 
