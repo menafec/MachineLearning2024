@@ -1,4 +1,4 @@
-#Proyecto de Modelos de Regresión en Java
+Proyecto de Modelos de Regresión en Java
 
 Descripción
 
@@ -10,7 +10,7 @@ Este proyecto implementa tres tipos de modelos de regresión en Java:
 
 El programa permite entrenar cada modelo con un conjunto de datos y realizar predicciones. Además, calcula el coeficiente de determinación (R²) para evaluar el ajuste de cada modelo. La implementación está diseñada de manera orientada a objetos y utiliza la biblioteca Jama para operaciones de álgebra lineal.
 
-##Estructura del Proyecto
+Estructura del Proyecto
 
 	•	Main.java: Contiene la lógica principal del programa, que permite al usuario seleccionar el tipo de modelo de regresión a evaluar.
 	•	SimpleLinearRegression.java: Implementación de la regresión lineal simple.
@@ -18,7 +18,7 @@ El programa permite entrenar cada modelo con un conjunto de datos y realizar pre
 	•	PolynomialRegression.java: Implementación de la regresión polinómica de grado N (en este caso, se utiliza para la regresión cúbica con grado 3).
 	•	DataSet.java: Contiene la lógica para segmentar los datos en conjuntos de entrenamiento y prueba.
 
-##Instalación y Ejecución
+Instalación y Ejecución
 
 Requisitos
 
@@ -39,7 +39,7 @@ Ejecución del Programa
 javac -cp .:jama.jar Main.java
 java -cp .:jama.jar Main
 
-##Ejemplo de Uso
+Ejemplo de Uso
 
 Al ejecutar el programa, el usuario verá el siguiente mensaje en la consola:
 
@@ -59,7 +59,7 @@ El conjunto de datos se divide en dos partes:
 
 Esto asegura que el modelo pueda ser entrenado y probado con diferentes subconjuntos de datos.
 
-##Clases Principales
+Clases Principales
 
 SimpleLinearRegression.java
 
