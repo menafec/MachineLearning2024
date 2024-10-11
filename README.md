@@ -1,41 +1,58 @@
-Proyecto de Modelos de Regresión en Java
+# Regresión en Java
 
-Descripción
+Este proyecto implementa varios modelos de **regresión** en Java utilizando un enfoque orientado a objetos. El objetivo de este programa es entrenar diferentes modelos de regresión, hacer predicciones y evaluar su rendimiento utilizando un conjunto de datos.
 
-Este proyecto implementa tres tipos de modelos de regresión en Java:
+## Descripción
 
-	1.	Regresión Lineal Simple
-	2.	Regresión Cuadrática
-	3.	Regresión Cúbica (o Regresión Polinómica de grado 3)
+El proyecto incluye implementaciones de tres tipos de regresión:
 
-El programa permite entrenar cada modelo con un conjunto de datos y realizar predicciones. Además, calcula el coeficiente de determinación (R²) para evaluar el ajuste de cada modelo. La implementación está diseñada de manera orientada a objetos y utiliza la biblioteca Jama para operaciones de álgebra lineal.
+- **Regresión Lineal Simple**: Modelo que relaciona una variable dependiente con una independiente.
+- **Regresión Cuadrática**: Extensión de la regresión lineal que incluye un término cuadrático.
+- **Regresión Cúbica**: Regresión polinómica de grado 3 que incluye términos de potencias hasta x³.
 
-Estructura del Proyecto
+Para este proyecto, hemos implementado las siguientes clases:
 
-	•	Main.java: Contiene la lógica principal del programa, que permite al usuario seleccionar el tipo de modelo de regresión a evaluar.
-	•	SimpleLinearRegression.java: Implementación de la regresión lineal simple.
-	•	QuadraticRegression.java: Implementación de la regresión cuadrática (regresión polinómica de grado 2).
-	•	PolynomialRegression.java: Implementación de la regresión polinómica de grado N (en este caso, se utiliza para la regresión cúbica con grado 3).
-	•	DataSet.java: Contiene la lógica para segmentar los datos en conjuntos de entrenamiento y prueba.
+- `DataSet`: Maneja la segmentación de los datos en conjuntos de entrenamiento y prueba.
+- `SimpleLinearRegression`: Implementa la regresión lineal simple.
+- `QuadraticRegression`: Implementa la regresión cuadrática.
+- `PolynomialRegression`: Implementa la regresión polinómica de grado N (utilizada para la regresión cúbica).
+- `Main`: Ejecuta el programa, permitiendo al usuario seleccionar el modelo de regresión a evaluar.
 
-Instalación y Ejecución
+### Características
 
-Requisitos
+- Implementación orientada a objetos en Java.
+- Entrenamiento de modelos de regresión y predicción de valores.
+- Cálculo del coeficiente de determinación (R²) para evaluar la precisión del modelo.
 
-	•	Java Development Kit (JDK) 8 o superior.
-	•	La biblioteca Jama para operaciones matriciales.
+## Estructura del Proyecto
+
+El proyecto incluye los siguientes archivos:
+
+- `Main.java`: Contiene la lógica principal del programa y permite al usuario seleccionar el modelo a evaluar.
+- `SimpleLinearRegression.java`: Implementación del modelo de regresión lineal simple.
+- `QuadraticRegression.java`: Implementación del modelo de regresión cuadrática.
+- `PolynomialRegression.java`: Implementación del modelo de regresión cúbica.
+- `DataSet.java`: Contiene la lógica para segmentar los datos en conjuntos de entrenamiento y prueba.
+
+## Instalación y Ejecución
+
+### Requisitos
+
+- Java Development Kit (JDK) 8 o superior.
+- La biblioteca **Jama** para operaciones matriciales.
 
 Para descargar la librería Jama:
 
-	1.	Visita: http://math.nist.gov/javanumerics/jama/
-	2.	Descarga el archivo jama.jar y asegúrate de agregarlo al classpath del proyecto.
+1. Visita: [Jama](http://math.nist.gov/javanumerics/jama/)
+2. Descarga el archivo `jama.jar` y asegúrate de agregarlo al classpath del proyecto.
 
-Ejecución del Programa
+### Ejecución del Programa
 
-	1.	Clona o descarga el proyecto en tu máquina.
-	2.	Asegúrate de que el archivo jama.jar está presente y configurado en tu entorno de desarrollo.
-	3.	Compila y ejecuta el archivo Main.java para interactuar con el programa.
+1. Clona o descarga el proyecto en tu máquina.
+2. Asegúrate de que el archivo `jama.jar` está presente y configurado en tu entorno de desarrollo.
+3. Compila y ejecuta el archivo `Main.java` para interactuar con el programa.
 
+```bash
 javac -cp .:jama.jar Main.java
 java -cp .:jama.jar Main
 
@@ -50,41 +67,6 @@ Seleccione el modelo a evaluar:
 
 Elige el modelo deseado ingresando el número correspondiente (1, 2 o 3). El programa entrenará el modelo seleccionado utilizando un conjunto de datos predefinido y realizará predicciones para valores específicos. También calculará el coeficiente de determinación (R²) para evaluar la precisión del modelo.
 
-Segmentación de Datos
-
-El conjunto de datos se divide en dos partes:
-
-	•	70% para el entrenamiento.
-	•	30% para las pruebas.
-
-Esto asegura que el modelo pueda ser entrenado y probado con diferentes subconjuntos de datos.
-
-Clases Principales
-
-SimpleLinearRegression.java
-
-	•	Implementa la regresión lineal simple (y = β₀ + β₁x).
-	•	Contiene métodos para entrenar el modelo, hacer predicciones y calcular R².
-
-QuadraticRegression.java
-
-	•	Implementa la regresión cuadrática (y = β₀ + β₁x + β₂x²).
-	•	Similar a la regresión lineal, pero incluye un término cuadrático.
-
-PolynomialRegression.java
-
-	•	Implementa una regresión polinómica general (y = β₀ + β₁x + β₂x² + … + βₙxⁿ).
-	•	En este proyecto, se usa para la regresión cúbica (grado 3).
-
-DataSet.java
-
-	•	Segmenta los datos en conjuntos de entrenamiento y prueba.
-	•	Puede personalizarse para manejar diferentes tamaños de segmentación.
-
-Dependencias
-
-	•	Jama - Biblioteca de álgebra lineal para Java.
-
 Mejoras Futuras
 
 Algunas posibles mejoras incluyen:
@@ -93,8 +75,16 @@ Algunas posibles mejoras incluyen:
 	•	Implementar otros tipos de modelos de regresión.
 	•	Agregar soporte para la normalización de datos.
 
+Contribuciones
+
+Si deseas contribuir a este proyecto, por favor sigue los siguientes pasos:
+
+	1.	Haz un fork del repositorio.
+	2.	Crea una nueva rama (git checkout -b feature/nueva-funcionalidad).
+	3.	Haz commit de tus cambios (git commit -am 'Agregué una nueva funcionalidad').
+	4.	Sube la rama (git push origin feature/nueva-funcionalidad).
+	5.	Abre un Pull Request.
 
 Licencia
 
 Este proyecto está bajo la licencia MIT. Ver el archivo LICENSE para más detalles.
-
